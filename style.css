@@ -298,7 +298,7 @@ video {
     top: -15px;
   }
 
-  .menu #conference-name {
+  .menu #company-name {
     color: var(--white);
     font-size: 25px;
     z-index: 400;
@@ -330,7 +330,7 @@ video {
     flex-direction: column;
     align-items: flex-start;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 10px;
     padding-inline-start: 0px;
   }
 
@@ -356,3 +356,14 @@ video {
     font-size: 13px;
   }
 }
+
+@media (max-height: 820px) {
+  .info  h1{
+    font-size: 40px;
+  }
+
+  .info p{
+    font-size: 12px;
+  }
+}
+
