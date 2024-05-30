@@ -209,6 +209,8 @@
     transition: ease-in-out, 0.5s;
     border-radius: 20px;
     background-color: aquamarine;
+    color: unset;
+    color: black;
 }
 
 .lastTab button:hover{
@@ -217,6 +219,10 @@
     
 }
 @media (max-width: 900px) {
+
+.itemsContainer .spaSessions .partOne h3 {
+    font-size: 22px;
+}
   .itemsContainer .spaSessions .partOne {
     flex-direction: column;
     width: 100%;
@@ -291,6 +297,7 @@
 
   .lastTab p{
     margin: 20px 0;
+    font-size: 13px;
   }
 
   .lastTab button{
@@ -299,7 +306,7 @@
   }
 
   .lastTab h2{
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 
