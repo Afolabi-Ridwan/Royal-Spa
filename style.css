@@ -5,20 +5,22 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins";
-  overflow: hidden;
 }
 
-:root{
+:root {
   --white: rgb(227, 226, 226);
+  --bg: #043443;
 }
 
 body {
-  background-color: #043443;
-  /* background-color: #02202a; */
+  background-color: var(--bg);
 }
 
+.container{
+  overflow: hidden;
+}
 .navbar {
-  background-color: #043443;
+  background-color: var(--bg);
   width: 100%;
   height: 70px;
   position: absolute;
@@ -41,8 +43,16 @@ body {
 .navbar li {
   list-style: none;
   color: var(--white);
+  cursor: pointer;
+  z-index: 20;
   font-weight: 400;
-  /* font-style: italic; */
+}
+
+
+.navbar li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: unset;
 }
 
 #navigation {
@@ -53,16 +63,14 @@ body {
 
 #logo {
   width: 130px;
-  height: 130px;
-  background-color: #043443;
+  max-height: 130px;
+  background-color: var(--bg);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white);
-  /* color: var(--white); */
-  /* color: #c37302; */
   z-index: 12;
 }
 
@@ -97,19 +105,14 @@ video {
 }
 
 #border {
-  /* position: absolute; */
-  background-color: #043443;
+  background-color: var(--bg);
   color: var(--white);
   height: 100vh;
   width: 10vw;
-  /* right: -20%; */
   border-right: 1px solid rgb(238, 238, 238, 0.4);
-  /* z-index: 14; */
   display: flex;
   flex-direction: column;
   position: relative;
-  /* max-width: 900px; */
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -171,10 +174,9 @@ video {
   color: rgb(202, 21, 139);
 }
 
-.menu{
-  display: block;
+.menu {
+  display: none;
 }
-
 
 @media (max-width: 900px) {
   body {
@@ -223,7 +225,7 @@ video {
     width: 100%;
     height: 49.5%;
     justify-content: unset;
-    background-color: #043443;
+    background-color: var(--bg);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -286,7 +288,7 @@ video {
   .menu #logoTab {
     position: relative;
     margin-top: 50px;
-    
+
     /* left: -35px; */
   }
 
@@ -304,7 +306,7 @@ video {
     z-index: 400;
   }
 
-  .linkTag{
+  .linkTag {
     text-decoration: none;
     color: var(--white);
   }
@@ -358,12 +360,11 @@ video {
 }
 
 @media (max-height: 820px) {
-  .info  h1{
+  .info h1 {
     font-size: 40px;
   }
 
-  .info p{
+  .info p {
     font-size: 12px;
   }
 }
-

@@ -1,0 +1,305 @@
+/* Third Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: rgb(227, 226, 226);
+  --bg: #043443;
+}
+
+.itemsContainer {
+  overflow-x: hidden;
+}
+
+.header {
+  margin-top: 70px;
+  margin-bottom: 80px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--white);
+  color: var(--bg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
+}
+
+.itemsContainer .image {
+  width: 50vw;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+
+.itemsContainer .partOne p {
+  position: absolute;
+  left: 30px;
+  padding: 30px 20px;
+  background-color: var(--bg);
+  border-radius: 40%;
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.itemsContainer .partOne.partTwo p {
+  left: unset;
+  right: 30px;
+}
+
+.itemsContainer .partOne p span:last-of-type {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.itemsContainer .partOne p span:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.itemsContainer .spaSessions .partOne {
+  display: flex;
+  margin-top: 0px;
+}
+
+.itemsContainer .spaSessions .partOne .note {
+  width: 50vw;
+  height: 300px;
+  color: var(--white);
+}
+
+.itemsContainer .spaSessions .partOne li {
+  margin: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  list-style: none;
+}
+
+.itemsContainer .spaSessions .partOne li i {
+  margin-right: 5px;
+  background-color: var(--white);
+  color: var(--bg);
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.itemsContainer .spaSessions .partOne h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.itemsContainer .spaSessions .partOne.partTwo .note {
+  text-align: left;
+}
+
+.itemsContainer .shortNote {
+  display: flex;
+  margin: 100px 50px;
+  color: var(--var(--white));
+  justify-content: center;
+}
+
+.itemsContainer .shortNote p {
+  width: 400px;
+  font-size: 20px;
+  margin-left: 50px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.itemsContainer .shortNote h3 {
+  width: 400px;
+  font-size: 30px;
+}
+
+.itemsContainer .shortNote button {
+  padding: 10px 30px;
+  background-color: var(--var(--white));
+  border: none;
+  color: var(--var(--white));
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.notices {
+  padding: 30px 0;
+  margin: 5px 0;
+  background-color: rgb(227, 226, 226);
+}
+
+.notices h3 {
+  text-align: center;
+  color: var(--bg);
+  margin-bottom: 30px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.notices .tab {
+  width: 350px;
+  height: 250px;
+  background-color: white;
+  border: 4px solid rgb(4, 52, 67, 0.7);
+  padding: 20px 10px;
+}
+
+.notices .tab p{
+    margin-top: 10px;
+}
+
+.notices .tab h4{
+    color: var(--bg);
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.notices .tabCont {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.notices i {
+  margin-right: 5px;
+  background-color: var(--bg);
+  color: var(--white);
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lastTab{
+    margin-bottom: 20px;
+    display: flex;
+    background-color: var(--bg);
+    padding: 40px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+.lastTab p{
+    max-width: 500px;
+    text-align: center;
+}
+
+.lastTab button{
+    padding: 5px 25px;
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out, 0.5s;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+.lastTab button:hover{
+    background-color: black;
+    color: white;
+    
+}
+@media (max-width: 900px) {
+  .itemsContainer .spaSessions .partOne {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 3px solid var(--white);
+  }
+
+  .itemsContainer .image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .itemsContainer .partOne.partTwo {
+    position: relative;
+  }
+
+  .itemsContainer .partOne.partTwo p {
+    position: absolute;
+    top: 0%;
+    z-index: 30;
+  }
+
+  .itemsContainer .spaSessions .partOne .note {
+    width: 100%;
+    height: auto;
+    color: var(--var(--white));
+    background-color: var(--var(--white) faded);
+  }
+
+  .itemsContainer .spaSessions .partTwo {
+    flex-direction: column-reverse;
+  }
+
+  .itemsContainer .shortNote {
+    flex-direction: column;
+  }
+
+  .itemsContainer .shortNote p {
+    width: auto;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .itemsContainer .shortNote h3 {
+    width: auto;
+    text-align: center;
+  }
+
+  .itemsContainer .shortNote button {
+    margin-left: 0;
+    display: flex;
+  }
+
+  .notices .tab {
+    width: 90vw;
+    height: 200px;
+    background-color: white;
+    border: 4px solid rgb(4, 52, 67, 0.7);
+    margin: 0 20px;
+    padding: 20px 10px;
+  }
+
+  .notices .tabCont{
+  gap: 30px;
+  }
+
+  .lastTab{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lastTab p{
+    margin: 20px 0;
+  }
+
+  .lastTab button{
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .lastTab h2{
+    font-size: 30px;
+  }
+}
+
