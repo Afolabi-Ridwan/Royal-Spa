@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="formContainer">
+
+    <div class="navbar">
+      <div id="logo">
+        <i  class="fa-solid fa-spa"></i>
+        <span style="font-size: 20px; font-weight: 700">Royal</span>
+        <span>Spa</span>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html" class="linkTag"> Home </a></li>
+        <li><a href="items.html" class="linkTag"> Items </a></li>
+        <li><a href="form.html" class="linkTag"> Form </a></li>
+        <li><a href="contact.html" class="linkTag"> Contact Us </a></li>
+        </ul>
+      </div>
+
+      <div id="navigation">
+        <i id="bars" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div id="topTabs">
+      <div class="tabs">
+        <h1>Massages</h1>
+        <p>
+          A gentle full-body massage that promotes relaxation and eases muscle
+          tension.
+        </p>
+        <p class="description">
+          Focuses on deeper layers of muscle and connective tissue.
+        </p>
+        <p class="description">
+          Uses smooth, heated stones placed on specific parts of the body.
+        </p>
+        <h4>$140</h4>
+        <button>Add To Basket</button>
+        <select>
+          <option>Swedish Massage</option>
+          <option>Deep Tissue Massage</option>
+          <option>Hot Stone Massage</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <h1>Scrubs & More</h1>
+        <p>
+          Uses sea salt to exfoliate and rejuvenate the skin, often mixed with
+          essential oils for added benefits.
+        </p>
+        <p class="description">
+          Fine granules provide mild exfoliation, suitable for all skin types.
+        </p>
+        <p class="description">
+          Calming and soothing, lavender helps relax the skin and mind.
+        </p>
+        <h4>$310</h4>
+        <button>Add To Basket</button>
+        <select>
+          <option>Salt Scrub</option>
+          <option>Sugar Scrub</option>
+          <option>Herbal Scrub</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <h1>Facials & Face Treatments</h1>
+        <p>
+          Cleansing, exfoliation, extraction, and moisturizing tailored to
+          your skin type.
+        </p>
+        <p class="description">
+          Uses products and techniques to reduce signs of aging, such as fine
+          lines and wrinkles.
+        </p>
+        <p class="description">
+          Infuses oxygen and specialized serums into the skin to rejuvenate
+          and hydrate.
+        </p>
+        <h4>$280</h4>
+        <button>Add To Basket</button>
+        <select>
+          <option>Classic Facials</option>
+          <option>Anti-Aging Facials</option>
+          <option>Oxygen Facials</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <h1>Hands-On Learning</h1>
+        <p>Practicing techniques for applying natural, everyday makeup.</p>
+        <p class="description">
+          Training on nail shaping, cuticle care, massage, and polish
+          application.
+        </p>
+        <p class="description">
+          Gaining skills in exfoliating and hydrating the skin through various
+          scrubs and wraps.
+        </p>
+        <h4>$240</h4>
+        <button>Add To Basket</button>
+        <select>
+          <option>Make-Up Application</option>
+          <option>Nail Services</option>
+          <option>Body Treatments</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <h1>Cryotherapy & Cold Therapy</h1>
+        <p>
+          These are small pools filled with cold water (usually between 50°F
+          and 59°F)
+        </p>
+        <p class="description">
+          Therapists use ice packs or specially designed ice cups to massage
+          specific areas of the body
+        </p>
+        <p class="description">
+          Similar to cryotherapy chambers, cold saunas expose the body to very
+          low temperatures for a brief period.
+        </p>
+        <h4>$300</h4>
+        <button>Add To Basket</button>
+        <select>
+          <option>Ice Baths</option>
+          <option>Ice Message</option>
+          <option>Cold Suana</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="basketTab">
+      <div id="container">
+        <div>
+          <h1>BASKET</h1>
+
+        </div>
+
+
+        <div id="infos">
+          <div></div>
+
+          <div id="paymentCardTab">
+            <h4>Choose your payment method</h4>
+
+            <div id="cardType">
+              <div id="visacardCont">
+                <input type="radio" id="visa" value="100" />
+                Visa
+              </div>
+
+              <div id="mastercardCont">
+                <input type="radio" id="MasterCard" value="100" />
+                MasterCard
+              </div>
+            </div>
+
+            <div id="cardInfos">
+              <table>
+                <tr id="userCardNameCont">
+                  <th>
+                    <label for="name"> Name on the card:</label>
+
+                  </th>
+                  <td id="userCardName">
+                    <input id="name" type="text" maxlength="15" />
+                    <input id="name" type="text" maxlength="15" />
+                    <input id="name" type="text" maxlength="15" />
+                    <input id="name" type="text" maxlength="15" />
+                  </td>
+                </tr>
+
+                <tr id="expiryDateCont">
+                  <th>
+                    <p> Expire Date: </p>
+                  </th>
+                  <td>
+                    <select id="months">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+
+                    <select id="years">
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr id="cvvCont">
+                  <th>CVV:</th>
+                  <td><input type="number" maxlength="3"></td>
+                </tr>
+              </table>
+            </div>
+            
+            <div id="totalCont">
+              <table>
+                <tr>
+                  <th class="rightAlign">Items</th>
+                  <th class="rightAlign">Total</th>
+                </tr>
+
+                <tr>
+                  <td class="rightAlign">x 0</td>
+                  <td class="rightAlign">$0.00</td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="buttons">
+              <button> Empty Cart </button>
+              <button> CheckOut</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="menu">
+          <div class="logo">
+            <div id="logoTab">
+              <a href="index.html" class="linkTag">
+                <h3 id="company-name">Royal Spa</h3>
+              </a>
+            </div>
+  
+            <div class="xMark">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <ul>
+            <li><a href="index.html" class="linkTag"> HOME </a></li>
+            <li><a href="items.html" class="linkTag"> ITEMS </a></li>
+            <li><a href="form.html" class="linkTag"> FORM </a></li>
+            <li><a href="contact.html" class="linkTag"> CONTACT US </a></li>
+          </ul>
+  
+          <a class="callNow linkTag" href="tel:+990-384-0000">
+            <div>
+              <i class="fa-solid fa-phone" style="color: white"></i>
+            </div>
+            <div class="number">
+              <p>+790-458-0000</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <script src="form.js"></script>
+      <script src="script.js"></script>
+</body>
+
+</html>

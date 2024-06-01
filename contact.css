@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --white: rgb(227, 226, 226);
+    --bg: #043443;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: var(--bg);
+    height: 100vh;
+  }
+  
+  header {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header div{
+    padding: 20px 0;
+  
+  margin-top: 40px;  
+  }
+  
+  
+  header h1 {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50vw;
+    margin-top: 40px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--bg);
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  footer {
+    background-color: var(--bg);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  #name.invalid{
+    border: 2px red solid;
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+  
+  #name.valid{
+    border: 2px green solid;
+    background-color: rgb(0, 255, 0, 0.3);
+  }
+  
+  #email.invalid{
+    border: 2px red solid;
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+  
+  #email.valid{
+    border: 2px green solid;
+    background-color: rgb(0, 255, 0, 0.3);
+  }
+  
+  #message.invalid{
+    border: 2px red solid;
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+  
+  #message.valid{
+    border: 2px green solid;
+    background-color: rgb(0, 255, 0, 0.3);
+  }
+  
+  @media (max-width: 860px) {
+    form {
+      width: 80vw;
+    }
+    header div{
+  margin-top: 60px;  
+    }
+  }
+  
