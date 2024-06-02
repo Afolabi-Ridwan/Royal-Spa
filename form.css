@@ -53,9 +53,9 @@ body {
 
 .tabs p {
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 0.5px;
-  height: 100px;
+  height: 120px;
   margin-top: 50px;
 }
 
@@ -66,6 +66,12 @@ body {
   border: none;
   background-color: rgb(127, 255, 212, 0.6);
   font-weight: 500;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.tabs button:hover{
+    background-color: var(--white);
 }
 
 .tabs select {
@@ -83,7 +89,7 @@ body {
 }
 
 #container {
-  width: 94vw;
+  width: 100%;
   border: 2px solid var(--white);
   padding: 20px 0;
   display: flex;
@@ -93,9 +99,14 @@ body {
 }
 
 #container h1{
-    width: 93vw;
-    border-bottom: 1px solid var(--white);
     text-align: center;
+  
+}
+
+#header{
+  border-bottom: 1px solid var(--white);
+    width: 95%;
+    /* margin: 0 20px; */
 }
 
 #infos{
@@ -105,11 +116,12 @@ body {
 }
 
 #infos div:first-of-type, #infos #paymentCardTab{
-    width: 47vw;
+    width: 100%;
 }
 
 
 #paymentCardTab h4{
+ 
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--white);
@@ -132,7 +144,7 @@ body {
 
 #cardInfos table {
   border-collapse: collapse;
-  width: 47vw;
+  width: 100%;
 }
 
   #cardInfos table tr{
@@ -151,15 +163,15 @@ body {
 
 #userCardName{
     display: flex;
-  /* align-items: stretch;
+  align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
-  justify-content: center; */
+  justify-content: center;
 }
 
 #userCardName input{
-  width: 100px;
+  width: 110px;
   font-size: 12px;
 }
 
@@ -180,7 +192,7 @@ body {
 
 #totalCont table{
   border-collapse: collapse;
-  width: 47vw;
+  width: 100%;
 }
 
 #totalCont table tr{
@@ -208,9 +220,16 @@ body {
   padding: 10px 30px;
   cursor: pointer;
   background-color: rgb(127, 255, 212, 0.6);
+  color: black;
   border: none;
   border-radius: 10px;
   transition: ease-in-out 0.3s;
+  /* color: unset; */
+}
+
+ button:focus,
+ input:focus{
+  color: unset;
 }
 
 #buttons button:hover{
@@ -220,6 +239,22 @@ body {
 #buttons button:last-of-type{
   margin-left: 20px;
 
+}
+
+.notification{
+  position: fixed;
+  top: 10%;
+  text-align: center;
+  left: -300px;
+  background-color: var(--bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  width: 300px;
+  transition: ease-in-out 1s;
+}
+
+.notification.active{
+  left: 0;
 }
 
 @media (max-width: 1200px){
@@ -233,16 +268,16 @@ body {
 
 
   #infos div:first-of-type, #infos #paymentCardTab{
-    width: 94vw;
+    width: 100%;
 }
 
 #totalCont table{
   border-collapse: collapse;
-  width: 94vw;
+  width: 100%;
 }
 #cardInfos table {
   border-collapse: collapse;
-  width: 94vw;
+  width: 100%;
 }
 }
 
@@ -273,4 +308,33 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
+  #userCardName{
+    display: flex;
+  align-items: center;
+  flex-wrap: unset;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+#cvvCont input{
+  width: 70px;
+}
+
+#mastercardCont,
+#visacardCont{
+    display: flex;
+    padding: unset;
+}
+
+body {
+  background-color: var(--bg);
+  padding: 30px 5px;
+}
+
+#spaceTab{
+  display: none;
+}
+
 }
