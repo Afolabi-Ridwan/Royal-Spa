@@ -346,6 +346,7 @@ select, option{
 
 .addToBasket, .tabs select{
   width: 90%;
+  text-align: center;
 }
 
 body {
