@@ -127,6 +127,16 @@ body {
     padding: 10px 0;
 }
 
+#months, #years{
+  width: 90px;
+  color: black;
+}
+
+
+select, option{
+  color: black;
+}
+
 #paymentCardTab #cardType{
     display: flex;
     align-items: center;
@@ -276,6 +286,7 @@ body {
   border-collapse: collapse;
   width: 100%;
 }
+
 #cardInfos table {
   border-collapse: collapse;
   width: 100%;

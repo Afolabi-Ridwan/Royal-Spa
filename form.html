@@ -35,6 +35,8 @@
         <i id="bars" class="fa-solid fa-bars"></i>
       </div>
     </div>
+
+
     <div id="topTabs">
       <div class="tabs">
         <h1>Massages</h1>
@@ -42,20 +44,22 @@
           Enhances blood flow, ease muscle tension, reduce stress, and improve flexibility
         </p>
       
-        <h4>$140</h4>
+        <h4>$250</h4>
         <button class="addToBasket">Add To Basket</button>
-        <select class="select">
-          <option price="$250"
+        <select class="select" id="massagesOptions">
+          <option value="250" price="$250" selected
             description="Enhances blood flow, ease muscle tension, reduce stress, and improve flexibility">Swedish
             Massage</option>
-          <option price="$170"
+          <option value="170" price="$170"
             description="Effective for chronic aches and pains, as well as areas of muscle tightness such as a stiff neck, upper back, low back pain.">
             Deep Tissue Massage</option>
-          <option price="$403"
+          <option value="403" price="$403"
             description="The heat from the stones can penetrate deeply into the muscles, promoting a sense of relaxation and well-being.">
             Hot Stone Massage</option>
         </select>
       </div>
+
+
       <div class="tabs">
         <h1>Scrubs & More</h1>
         <p id="description">
@@ -63,20 +67,22 @@
           smoother, softer, and more radiant.
         </p>
 
-        <h4>$310</h4>
+        <h4>$200</h4>
         <button class="addToBasket">Add To Basket</button>
-        <select class="select">
-          <option price="$200"
+        <select class="select" id="scrubsOptions">
+          <option value="200" price="$200" selected
           description="The coarse texture of the salt gently sloughs away dead skin cells when massaged onto the skin, leaving it smoother, softer, and more radiant. ">
             Salt Scrub</option>
-          <option price="$360"
+          <option value="360" price="$360"
             description="It is used to remove dead skin cells, leaving the skin smoother and more radiant">Sugar Scrub
           </option>
-          <option price="$440"
+          <option value="440" price="$440"
             description="This is a natural exfoliating treatment that uses a blend of herbs, essential oils, and other natural ingredients to cleanse and rejuvenate the skin.">
             Herbal Scrub</option>
         </select>
       </div>
+
+
       <div class="tabs">
         <h1>Facials & Face Treatments</h1>
         <p id="description">
@@ -84,39 +90,41 @@
           application of a mask
         </p>
         
-        <h4>$280</h4>
-        <button class="addToBasket">Add To Basket</button>
-        <select class="select">
-          <option price="$100"
+        <h4>$100</h4>
+        <button class="addToBasket" >Add To Basket</button>
+        <select class="select" id="facialsOptions">
+          <option value="100" price="$100" selected
             description="This type of facial typically includes several key steps: cleansing, exfoliation, extraction, massage, and the application of a mask">
             Classic Facials</option>
-          <option price="$110"
+          <option value="110" price="$110"
             description="These facials typically incorporate advanced techniques and products to rejuvenate and revitalize the skin">
             Anti-Aging Facials</option>
-          <option price="$500"
+          <option value="500" price="$500"
             description="This facial is designed to rejuvenate the skin by boosting hydration, promoting collagen production, and enhancing the overall appearance of the complexion">
             Oxygen Facials</option>
         </select>
       </div>
+
       <div class="tabs">
         <h1>Hands-On Learning</h1>
         <p id="description">Makeup application is the art and technique of enhancing facial features using cosmetics.
         </p>
        
-        <h4>$240</h4>
+        <h4>$602</h4>
         <button class="addToBasket">Add To Basket</button>
-        <select class="select">
-          <option price="$602"
+        <select class="select" id="handsOnLearningOptions">
+          <option value="602" price="$602" selected
             description="Makeup application is the art and technique of enhancing facial features using cosmetics.">
             Make-Up Application</option>
-          <option price="$302"
+          <option value="302" price="$302"
             description="Nail services hands-on learning offers a dynamic and immersive educational experience that prepares students for successful careers as nail technicians in salons, spas, and beauty establishments.">
             Nail Services</option>
-          <option price="$230"
+          <option value="230" price="$230"
             description="Body treatments in hands-on learning involve practical, experiential education focused on various techniques and therapies for the body. ">
             Body Treatments</option>
         </select>
       </div>
+
       <div class="tabs">
         <h1>Cryotherapy & Cold Therapy</h1>
         <p id="description">
@@ -124,16 +132,16 @@
           waist down, in ice-cold water for a short period, usually between 10 to 20 minutes.
         </p>
         
-        <h4>$300</h4>
+        <h4>$320</h4>
         <button class="addToBasket">Add To Basket</button>
-        <select class="select">
-          <option price="$320"
+        <select class="select" id="cryotherapyOptions">
+          <option value="320" price="$320"
             description="Ice baths, also known as cold water immersion or cryotherapy, involve immersing the body, typically from the waist down, in ice-cold water for a short period, usually between 10 to 20 minutes.">
             Ice Baths</option>
-          <option price="$310"
+          <option value="310" price="$310"
             description="Ice massage is a therapeutic technique that involves using ice to massage specific areas of the body. ">
             Ice Message</option>
-          <option price="$220"
+          <option value="220" price="$220"
             description="An ice sauna, also known as a snow sauna or ice room, is a traditional Finnish sauna experience enhanced with the addition of ice or snow">
             Cold Suana</option>
         </select>
@@ -175,10 +183,10 @@
 
                   </th>
                   <td id="userCardName">
-                    <input id="name" type="text" maxlength="15" />
-                    <input id="name" type="text" maxlength="15" />
-                    <input id="name" type="text" maxlength="15" />
-                    <input id="name" type="text" maxlength="15" />
+                    <input id="name" type="text" maxlength="15"  required/>
+                    <input id="name" type="text" maxlength="15" required/>
+                    <input id="name" type="text" maxlength="15" required/>
+                    <input id="name" type="text" maxlength="15" required/>
                   </td>
                 </tr>
 
@@ -188,7 +196,7 @@
                   </th>
                   <td>
                       
-                    <select id="months">
+                    <select id="months" required>
                       <option value="01">01</option>
                       <option value="02">02</option>
                       <option value="03">03</option>
@@ -209,7 +217,7 @@
 
                 <tr id="cvvCont">
                   <th>CVV:</th>
-                  <td><input type="number" min="0" max="999" oninput="checkMaxLength(this)"/></td>
+                  <td><input required type="number" min="0" max="999" oninput="checkMaxLength(this)"/></td>
                 </tr>
               </table>
             </div>
@@ -222,15 +230,15 @@
                 </tr>
 
                 <tr>
-                  <td class="rightAlign">x <span id="counter">0</span></td>
-                  <td class="rightAlign">$0.00</td>
+                  <td class="rightAlign" style="font-size: 20px;">x <span id="counter">0</span></td>
+                  <td class="rightAlign" style="font-size: 20px;">$ <span id="totalPrice">0</span>.00</td>
                 </tr>
               </table>
             </div>
 
             <div id="buttons">
-              <button> Empty Cart </button>
-              <button> CheckOut</button>
+              <button id="emptyCart"> Empty Cart </button>
+              <button id="checkOut"> CheckOut </button>
             </div>
           </div>
         </div>
