@@ -334,10 +334,18 @@ select, option{
   width: 70px;
 }
 
+.cardType{
+}
+
 #mastercardCont,
 #visacardCont{
     display: flex;
     padding: unset;
+    margin: 0 30px;
+}
+
+.addToBasket, .tabs select{
+  width: 90%;
 }
 
 body {
@@ -347,6 +355,11 @@ body {
 
 #spaceTab{
   display: none;
+}
+
+#userCardName input{
+  width: 180px;
+  font-size: 12px;
 }
 
 }
