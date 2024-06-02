@@ -157,15 +157,15 @@ checkOut.addEventListener("click", () => {
       }, 1000);
     }
 
-    const popMessage = setTimeout(() => {
+    const popUp = setTimeout(() => {
       const confirmMessage = prompt(
         "Do you accept the calculated total cost for payment please?"
       );
 
       if (confirmMessage === "yes") {
-        alert(" 🙏THANK YOU!!!");
+        alert(" 🙏THANK YOU!");
       } else if (confirmMessage === "Yes") {
-        alert(" 🙏THANK YOU!!!");
+        alert(" 🙏THANK YOU!");
       } else {
         alert("😟 APPLICATION WITHDRAWN!!!");
         window.location.reload();
@@ -174,7 +174,7 @@ checkOut.addEventListener("click", () => {
       return confirmMessage;
     }, 2000);
 
-    return popMessage;
+    return popUp;
   } else {
     alert("Please add to Cart!!! 👀");
   }
