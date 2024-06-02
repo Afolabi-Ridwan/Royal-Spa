@@ -99,7 +99,7 @@ const checkExpiry = () => {
   console.log(month, year);
 
   if (selectedDate < currentDate) {
-    alert("Application Withdraw!");
+    alert("Card Expired! Input a valid card 🔴");
     window.location.reload();
   } else {
   }
