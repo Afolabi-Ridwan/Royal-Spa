@@ -6,8 +6,10 @@ const selection = document.querySelectorAll(".select");
 const radios = document.querySelectorAll('input[type="radio"]');
 
 const yearSelected = document.getElementById('years');
-const month = document.getElementById('months').value;
-const year = document.getElementById('years').value;
+
+
+// selection from the property dropdown inputs
+
 
 selection.forEach((select) => {
     select.addEventListener("change", () => {
@@ -30,6 +32,9 @@ const addedItemsCounter = () => {
   counter++;
 };
 
+// adding count to the basket
+
+
 AddToBasketBtn.forEach((button) => {
   button.addEventListener("click", () => {
     console.log("clicked");
@@ -44,21 +49,10 @@ AddToBasketBtn.forEach((button) => {
 });
 
 
+// Populating the year dropdown input
 
-radios.forEach(function (radio) {
-    radio.addEventListener("click", function () {
-      if (radio.checked) {
-        // setTimeout(() =>  {
-            // radio.checked = false;
-        // }, 0)
-      } else {
-      }
-    })
-})
-
-
-function populateYearDropdown() {
-    const currentYear = new Date().getFullYear();
+const populateYearDropdown = () => {
+    const currentYear = new Date().getFullYear() - 1;
     const numberOfYears = 10; 
 
     for (let i = 0; i < numberOfYears; i++) {
@@ -69,15 +63,20 @@ function populateYearDropdown() {
     }
 }
 
-function checkExpiry() {
+// Checking the expiry Dates
+
+const checkExpiry = () => {
+    const month = document.getElementById('months').value;
+    const year = document.getElementById('years').value;
 
     const currentDate = new Date();
-    const selectedDate = new Date(month); 
+    const selectedDate = new Date(year, month - 1); 
 
     console.log(month, year)
 
-    if (selectedDate > currentDate) {
-        alert("expired card")
+    if (selectedDate < currentDate) {
+        alert("Application Withdraw!")
+        window.location.reload();
     } else {
     }
 }
@@ -86,6 +85,16 @@ yearSelected.addEventListener("change", () => {
     checkExpiry()
 })
 
+
+// Checking the CVV input value length  
+
+const checkMaxLength = (input) => {
+    if(input.value.length > 3){
+        input.value = input.value.slice(0,3);
+    }
+}
+
+// 
 
 document.addEventListener('DOMContentLoaded', () => {
     populateYearDropdown();

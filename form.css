@@ -105,8 +105,7 @@ body {
 
 #header{
   border-bottom: 1px solid var(--white);
-    width: 95%;
-    /* margin: 0 20px; */
+    width: 100%;
 }
 
 #infos{
@@ -224,12 +223,11 @@ body {
   border: none;
   border-radius: 10px;
   transition: ease-in-out 0.3s;
-  /* color: unset; */
 }
 
- button:focus,
- input:focus{
-  color: unset;
+ #formContainer button,
+ #formContainer input{
+  color: black;
 }
 
 #buttons button:hover{
@@ -246,11 +244,14 @@ body {
   top: 10%;
   text-align: center;
   left: -300px;
-  background-color: var(--bg);
+  background-color: rgb(45, 137, 108);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 10px 0;
+  padding: 0;
+  color: black;
   width: 300px;
   transition: ease-in-out 1s;
+  letter-spacing: 0.6px;
+  font-size: 20px;
 }
 
 .notification.active{
